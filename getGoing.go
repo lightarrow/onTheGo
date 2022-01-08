@@ -38,6 +38,55 @@ func main() {
 		if frac := a / b; frac > 0.5 {
 			fmt.Println("a is more than half of b")
 		}
+
+	}
+	x = 2
+	switch x {
+	case 1:
+		fmt.Println("one")
+	case 2:
+		fmt.Println("two")
+	case 3:
+		fmt.Println("three")
+	default:
+		fmt.Println("many")
+
+	}
+	for i := 0; i < 3; i++ {
+		fmt.Println(i)
+	}
+
+	fmt.Println("----")
+	for i := 0; i < 3; i++ {
+		if i > 1 {
+			break
+		}
+		fmt.Println(i)
+	}
+
+	fmt.Println("----")
+	for i := 0; i < 3; i++ {
+		if i < 1 {
+			continue
+		}
+		fmt.Println(i)
+	}
+
+	fmt.Println("----")
+	a := 0
+	for a < 3 {
+		fmt.Println(a)
+		a++
+	}
+
+	fmt.Println("----")
+	b := 0
+	for {
+		if b > 2 {
+			break
+		}
+		fmt.Println(b)
+		b++
 	}
 
 }
