@@ -10,11 +10,24 @@ import (
 
 func main() {
 	fmt.Println("Welcome Gophers")
-	var x int
-	var y int
-	x = 1
-	y = 2
+	x, y := 1.0, 2.0
 	fmt.Printf("x=%v, type of %T\n", x, x)
-	fmt.Printf("x=%v, type of %T\n", y, y)
+	fmt.Printf("y=%v, type of %T\n", y, y)
+
+	mean := (x + y) / 2.0
+	fmt.Printf("result: %v, type of %T\n", mean, mean)
+
+	// conditions
+	if x > 5 {
+		fmt.Println("x is big")
+		if x > 100 {
+			fmt.Println("x is very big")
+		} else {
+			fmt.Println("x is not that big")
+		}
+		if x > 5 && x < 15 {
+			fmt.Println("x is just right")
+		}
+	}
 
 }
